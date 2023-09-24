@@ -1,11 +1,13 @@
 using System;
+using System.IO;
+using System.Collections.Generic;
 
 public class Journal
 {
-    public List<Entry> _entries;
-    public void AddEntry(newEntry : Entry)
+    public List<string> _entries = new List<string>();
+    public void AddEntry(Entry _entries)
     {
-
+        _entries.
     }
 
     public void DisplayAll()
@@ -13,12 +15,12 @@ public class Journal
 
     }
 
-    public SaveToFile(file : string)
+    public void SaveToFile(string file)
     {
-
+        
     }
 
-    public LoadFromFile(File , string)
+    public void LoadFromFile(string file)
     {
 
     }

@@ -7,6 +7,6 @@ public class Entry
     public string _entryText;
     public void Display()
     {
-        Console.WriteLine();
+        Console.WriteLine("");
     }
 }
