@@ -36,6 +36,16 @@ class Word
 
     public bool IsHidden()
     {
-        bool _isHidden;
+        return _isHidden;
+    }
+    
+    public void Hidden()
+    {
+        _isHidden = true;
+    }
+
+    public void notHidden()
+    {
+        _isHidden = false;
     }
 }
