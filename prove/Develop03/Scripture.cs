@@ -18,7 +18,7 @@ class Scripture
 
     public bool IsCompletelyHidden()
     {
-        bool hide;
+        return ;
     }
 
     public Scripture(Reference Reference, string text)
