@@ -1,5 +1,4 @@
 using System;
-using System.Data;
 
 class Reference
 {
@@ -10,7 +9,7 @@ class Reference
 
     public string GetDisplayText()
     {
-        string text = ($"Behold, I am a disciple of Jesus Christ, the Son of God.  I have been called of him to declare his word among his people, that they might have everlasting life.");
+        string text = ("Behold, I am a disciple of Jesus Christ, the Son of God.  I have been called of him to declare his word among his people, that they might have everlasting life.");
         return text;
     }
 
@@ -27,7 +26,9 @@ class Reference
         _chapter = chapter;
         _verse = startVerse;
         _endVerse = endVerse;
-
-
+    }
+    public void Display()
+    {
+        Console.WriteLine($"{_book} Chapter {_chapter}: {_verse}");
     }
 }

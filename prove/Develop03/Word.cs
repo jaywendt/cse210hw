@@ -1,5 +1,4 @@
 using System;
-using System.Reflection.Metadata.Ecma335;
 
 class Word
 {
@@ -8,7 +7,8 @@ class Word
 
     public void Hide()
     {
-        
+        Console.Clear();
+        Console.Write("___");
     }
 
     public void Show()
@@ -16,19 +16,26 @@ class Word
 
     }
 
-    public bool IsHidden()
-    {
-
-    }
-
     public string GetDisplayText()
     {
-        string text = 
-        return text;
+        if (_text =)
+        {
+            string text = 
+            return text;
+        }
+        else
+        {
+            
+        }
     }
 
     public Word(string text)
     {
+        _text = "";
+    }
 
+    public bool IsHidden()
+    {
+        bool _isHidden;
     }
 }
