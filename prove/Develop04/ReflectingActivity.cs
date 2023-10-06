@@ -12,21 +12,25 @@ public class ReflectingActivity : Activity
 
     public string GetRandomPrompt()
     {
-
+        return ;
     }
 
     public string GetRandomQuestion()
     {
-
+        return ;
     }
 
     public void DisplayPrompt()
     {
-
+        
     }
 
     public void DisplayQuestions()
     {
 
+    }
+
+    public ReflectingActivity() : base("Reflecting Activity")
+    {
     }
 }
