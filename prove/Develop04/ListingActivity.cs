@@ -7,7 +7,8 @@ public class ListingActivity : Activity
 
     public void Run()
     {
-
+        DisplayStartingMessage();
+        DisplayEndingMessage();
     }
 
     public string GetRandomPrompt()
@@ -18,5 +19,9 @@ public class ListingActivity : Activity
     public List<string> GetListFromUser()
     {
 
+    }
+
+    public ListingActivity() : base("Listing Activity")
+    {
     }
 }

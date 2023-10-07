@@ -10,8 +10,6 @@ public class Activity
         Console.WriteLine();
         Console.WriteLine($"Welcome to your {_name} activity!  The activity will be starting soon.");
         Thread.Sleep(5000);
-        Countdown();
-        Console.WriteLine();
     }
 
     public void DisplayEndingMessage()
@@ -23,10 +21,13 @@ public class Activity
 
     public void ShowSpinner(int seconds)
     {
-
+        Console.Write("+");
+        Thread.Sleep(500);
+        Console.Write("\b \b");
+        Console.Write("-");
     }
 
-    private void Countdown()
+    public void Countdown()
     {
         Console.WriteLine("The activity will start in 3.");
         Thread.Sleep(1000);

@@ -20,21 +20,24 @@ class Program
 
             if (choice == "1")
             {
-
+                BreathingActivity breath1 = new BreathingActivity();
+                breath1.Run();
             }
 
             else if (choice == "2")
             {
-
+                ReflectingActivity ref1 = new ReflectingActivity();
+                ref1.Run();
             }
 
             else if (choice == "3")
             {
-                
+                ListingActivity list1 = new ListingActivity();
+                list1.Run();
             }
 
         }
         while (choice != "4");
-        Console.WriteLine("Thank you for taking a minute with us!  Goodbye!");
+        Console.WriteLine("Thank you for taking a minute to be mindful with us!  Goodbye!");
     }
 }

@@ -7,7 +7,8 @@ public class ReflectingActivity : Activity
 
     public void Run()
     {
-
+        DisplayStartingMessage();
+        DisplayEndingMessage();
     }
 
     public string GetRandomPrompt()
@@ -32,5 +33,9 @@ public class ReflectingActivity : Activity
 
     public ReflectingActivity() : base("Reflecting Activity")
     {
+        Random random = new Random();
+        List<string> prompts = new List<string>() {
+            ""
+        };
     }
 }
