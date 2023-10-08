@@ -19,12 +19,34 @@ public class Activity
         Console.WriteLine();
     }
 
-    public void ShowSpinner(int seconds)
+    public void ShowSpinner()
     {
-        Console.Write("+");
-        Thread.Sleep(500);
-        Console.Write("\b \b");
-        Console.Write("-");
+        List<string> spinner = new List<string>();
+        spinner.Add("+");
+        spinner.Add("x");
+        spinner.Add("+");
+        spinner.Add("x");
+
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(5);
+
+        int i = 0;
+
+        while (DateTime.Now < endTime)
+        {
+            string s = spinner[i];
+            Console.Write(s);
+            Thread.Sleep(500);
+            Console.Write("\b \b");
+
+            i++;
+
+            if (i >= spinner.Count)
+            {
+                i = 0;
+            }
+        }
+        
     }
 
     public void Countdown()
