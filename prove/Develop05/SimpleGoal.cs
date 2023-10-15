@@ -4,23 +4,38 @@ public class SimpleGoal : Goal
 {
     private bool _isComplete;
 
-    public SimpleGoal(string name, string description, int points) : base ("Simple Goal")
+    public SimpleGoal(string name, string description, int points) : base("Simple Goal")
+    {
+        _isComplete = false;
+    }
+
+    public SimpleGoal(string name, string description, int points, bool complete) : base("Simple Goal")
+    {
+        _isComplete = complete;
+    }
+
+    public override void RecordEvent()
     {
         
     }
 
-    public void RecordEvent()
+    public override bool IsComplete()
     {
-        
+        return _isComplete;
     }
 
-    public bool IsComplete()
+    public void Completed()
     {
-
+        _isComplete = true;
     }
 
-    public string GetStringRepresentation()
+    public void NotComplete()
     {
-        
+        _isComplete = false;
+    }
+
+    public override string GetStringRepresentation()
+    {
+        return "";
     }
 }

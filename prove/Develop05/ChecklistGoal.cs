@@ -11,23 +11,23 @@ public class ChecklistGoal : Goal
 
     }
 
-    public void RecordEvent()
+    public override void RecordEvent()
     {
 
     }
 
-    public bool IsComplete()
+    public override bool IsComplete()
     {
 
     }
 
-    public string GetDetailsString()
+    public override string GetDetailsString()
     {
-
+        return "";
     }
 
-    public string GetStringRepresentation()
+    public override string GetStringRepresentation()
     {
-        
+        return "";
     }
 }

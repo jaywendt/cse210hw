@@ -13,22 +13,22 @@ public class Goal
         _points = points;
     }
 
-    public void RecordEvent()
+    public virtual void RecordEvent()
     {
 
     }
 
-    public bool IsComplete()
+    public virtual bool IsComplete()
+    {
+        
+    }
+
+    public virtual string GetDetailsString()
     {
 
     }
 
-    public string GetDetailsString()
-    {
-
-    }
-
-    public string GetStringRepresentation()
+    public virtual string GetStringRepresentation()
     {
 
     }
