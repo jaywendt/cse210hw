@@ -1,4 +1,5 @@
 using System;
+using System.Formats.Asn1;
 
 public class GoalManager
 {
@@ -37,11 +38,31 @@ public class GoalManager
     public void CreateGoal()
     {
         Console.WriteLine("You wish to create a new goal!");
-        Console.WriteLine("Please enter what you want your new goal name to be:");
-        string goalName = Console.ReadLine();
-        _goals.Add(goalName);
-        Console.WriteLine("Now enter a description of your goal: ");
-        string goalDesc = Console.ReadLine();
+        Console.WriteLine("Please enter what number goal you wish to set:");
+        Console.WriteLine("1. Simple Goal");
+        Console.WriteLine("2. Eternal Goal");
+        Console.WriteLine("3. Checklist Goal");
+        int answer = int.Parse(Console.ReadLine());
+
+        if (answer == 1)
+        {
+            SimpleGoal sg = new SimpleGoal(name, description, points);
+            Console.WriteLine(sg);
+            _goals.Add(sg);
+            
+        }
+        else if (answer == 2)
+        {
+            EternalGoal eg = new EternalGoal(name, description, points);
+            Console.WriteLine(eg);
+            _goals.Add(eg);
+        }
+        else
+        {
+            ChecklistGoal cg = new ChecklistGoal(name, description, points, target, bonus);
+            Console.WriteLine(cg);
+            _goals.Add(cg);
+        }
     }
 
     public void RecordEvent()
