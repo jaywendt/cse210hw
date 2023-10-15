@@ -8,6 +8,8 @@ class Program
 
         do
         {
+            List<Goal> goals = new List<Goal>();
+
             Console.WriteLine("Welcome to your goal management program!");
             Console.WriteLine();
             Console.WriteLine($"You currently have {points} points.");
