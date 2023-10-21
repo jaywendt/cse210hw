@@ -11,7 +11,7 @@ public class Comment
         _comment = comment;
     }
 
-    public void GetComment()
+    public void DisplayComment()
     {
         Console.WriteLine($"{_commenter}: {_comment}");
     }
